@@ -1,0 +1,37 @@
+@import "colors";
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.text--slim {
+  font-weight: 400;
+}
+
+.text--huge {
+  font-size: 4rem;
+}
+
+.text--large {
+  font-size: 3rem;
+}
+
+.text--medium {
+  font-size: 1.5rem;
+}
+
+.text--small {
+  font-size: 1rem;
+}
+
+.text--tiny {
+  font-size: .5rem;
+}
+
+.text-color--light {
+  color: $white;
+}
+
+.text-color--dark {
+  color: black;
+}

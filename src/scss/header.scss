@@ -1,0 +1,17 @@
+@import "colors";
+
+.header {
+  position: relative;
+  background-color: $background-color;
+  height: 85vh;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 91%, 81% 100%, 69% 81%, 35% 100%, 16% 84%, 0 100%, 0 0);
+}
+
+.title {
+  text-align: end;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}

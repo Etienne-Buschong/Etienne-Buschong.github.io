@@ -1,0 +1,36 @@
+{
+  "name": "etienne-buschong.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp:dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Etienne-Buschong/Etienne-Buschong.github.io.git"
+  },
+  "author": "Etienne Buschong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Etienne-Buschong/Etienne-Buschong.github.io/issues"
+  },
+  "homepage": "https://github.com/Etienne-Buschong/Etienne-Buschong.github.io#readme",
+  "dependencies": {
+    "gulp-requirejs": "^1.3.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "gulp": "^4.0.2",
+    "gulp-buffer": "0.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tap": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

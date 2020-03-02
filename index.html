@@ -1,1 +1,63 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="Etienne Buschong">
+    <meta name="description" content="This is my personal website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="dist/main.js" charset="utf-8"></script>
+</head>
+
+<body id="body">
+<div class="header">
+    <div class="letterbox">
+        <nav class="navbar text--small">
+            <a class="navbar__link" href="#about">About</a>
+            <a class="navbar__link" href="#">Education</a>
+            <a class="navbar__link" href="#">Projects</a>
+            <a class="navbar__link" href="#">Contact</a>
+        </nav>
+        <div class="octagon octagon--1">&nbsp;</div>
+        <div class="octagon octagon--2">&nbsp;</div>
+        <div class="octagon octagon--3">&nbsp;</div>
+        <div class="title">
+            <h1 class="text--large text-color--light">Etienne Buschong</h1>
+            <h2 class="text--medium text--slim text-color--light">Master of science student in computer science</h2>
+        </div>
+    </div>
+</div>
+<div id="about" class="about">
+    <div class="letterbox centering">
+        <h2 class="text--large text-color--dark space-top--medium">About</h2>
+        <div class="about__content space-top--large">
+            <!-- TODO Find more nice looking image (or take new one ;)) -->
+            <img class="about__picture" src="dist/images/profile.jpg" alt="Picture of me">
+            <div class="about__text">
+                <p>
+                    Hello, my name is Etienne Buschong. I am currently a master of science student in economical
+                    computer science at Johannes Gutenberg-Universität Mainz. My main interests lie in machine learning,
+                    computer vision and web development. Additionally during my master studies i developed interest
+                    for combinatorial optimization originating from routing and scheduling problems.
+                </p>
+                <p>
+                    Besides my interest for computers i love sports. My main sport resolve around climbing but i also
+                    rediscovered swimming and running for myself in the last years. Additionally i like playing music
+                    both on the electric guitar and the piano. Finally i also enjoy playing video games where i mostly
+                    play competitive shooters or occasionally a MMO.
+                </p>
+            </div>
+        </div>
+        <div class="cv-container">
+            <div class="cv-container__before-line">&nbsp;</div>
+            <button class="cv-container__button">Download CV</button>
+            <div class="cv-container__after-line">&nbsp;</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
