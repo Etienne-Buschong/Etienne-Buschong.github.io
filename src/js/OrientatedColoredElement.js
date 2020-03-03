@@ -6,13 +6,13 @@ class OrientatedColoredElement {
         this.name = name;
         this.element = document.getElementsByClassName(this.name)[0];
         this.bdr = this.element.getBoundingClientRect();
-        console.log(this.bdr);
         this.center = new Vector2D(this.bdr.left + this.bdr.width / 2, this.bdr.top + this.bdr.height / 2);
         this.maxDistance = Math.max(document.documentElement.clientWidth - this.center.u, this.center.u);
     }
 
     updateOrientation(mousePosition) {
         const dir = mousePosition.minus(this.center);
+        // TODO rotate hsv color angle a bit, so that red-ish color is on left side of screen (seems to look better)
         const angle = Math.floor(dir.angle());
         this.element.style.transform = `rotate(${angle}deg`;
     }

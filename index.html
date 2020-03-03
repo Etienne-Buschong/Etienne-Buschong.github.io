@@ -9,11 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link href="https://css.gg/c?=|arrow-up-o|attachment|check-r|file-document|time" rel="stylesheet">
     <script type="text/javascript" src="dist/main.js" charset="utf-8"></script>
 </head>
 
 <body id="body">
 <div class="header">
+    <svg width="0" height="0">
+        <clipPath id="headerClipPath" clipPathUnits="objectBoundingBox">
+            <path d="
+            M 0 0
+            L 0 0.8
+            C 0.05 0.7, 0.15 1, 0.2 1
+            C 0.25 1 0.35 0.7 0.4 0.9
+            C 0.45 1 0.55 0.8 0.6 .95
+            C 0.63 1 0.75 0.7 0.8 .9
+            C 0.83 1 0.95 1 1 0.75
+            L 1 0
+            Z"/>
+        </clipPath>
+    </svg>
     <div class="letterbox">
         <nav class="navbar text--small">
             <a class="navbar__link" href="#about">About</a>
@@ -53,8 +68,54 @@
         </div>
         <div class="cv-container">
             <div class="cv-container__before-line">&nbsp;</div>
-            <button class="cv-container__button">Download CV</button>
+            <button class="cv-container__button text--small">
+                <i class="gg-attachment"></i>
+                Download CV
+            </button>
             <div class="cv-container__after-line">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<div class="education">
+    <div class="letterbox centering">
+        <h2 class="text--large text-color--light space-top--medium">Education</h2>
+        <div class="timeline">
+            <div class="timeline-entry timeline-entry--1">
+                <div class="timeline-entry__content">
+                    <p class="timeline-entry__degree">German A-Levels</p>
+                    <p class="timeline-entry__institution text--tiny">Gymnasium am Mosbacher Berg</p>
+                    <div class="timeline-entry__done-indicator">
+                        <i class="gg-check-r"></i>
+                    </div>
+                    <div class="timeline-entry__time-indicator">
+                        2006-2014
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-entry timeline-entry--2">
+                <div class="timeline-entry__content">
+                    <p class="timeline-entry__degree">B.Sc. Computer Science</p>
+                    <p class="timeline-entry__institution text--tiny">Johannes-Gutenberg Universität</p>
+                    <div class="timeline-entry__done-indicator">
+                        <i class="gg-check-r"></i>
+                    </div>
+                    <div class="timeline-entry__time-indicator">
+                        2014-2018
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-entry timeline-entry--3">
+                <div class="timeline-entry__content">
+                    <p class="timeline-entry__degree">M.Sc. Economical Computer Science</p>
+                    <p class="timeline-entry__institution text--tiny">Johannes-Gutenberg Universität</p>
+                    <div class="timeline-entry__done-indicator">
+                        <i class="gg-time"></i>
+                    </div>
+                    <div class="timeline-entry__time-indicator">
+                        2018-Now
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

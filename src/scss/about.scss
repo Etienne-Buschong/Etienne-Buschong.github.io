@@ -1,8 +1,9 @@
 @import "colors";
+@import url('https://css.gg/attachment.css');
 
 .about {
 
-  padding-bottom: 30rem;
+  padding-bottom: 5rem;
 
   &__content {
     padding: 0 2rem;
@@ -27,7 +28,7 @@
 
 }
 
-@keyframes straightToFancyLineBefore {
+@keyframes straightToFancyLineBeforeIn {
   0% {
     clip-path: polygon(0 30%, 10% 70%, 20% 40%, 30% 35%, 40% 50%, 50% 90%, 60% 40%, 70% 65%, 80% 45%, 90% 40%, 100% 45%,
                        100% 55%, 90% 50%, 80% 55%, 70% 75%, 60% 50%, 50% 100%, 40% 60%, 30% 45%, 20% 50%, 10% 80%, 0% 40%);
@@ -39,7 +40,7 @@
   }
 }
 
-@keyframes straightToFancyLineAfter {
+@keyframes straightToFancyLineAfterIn {
   0% {
     clip-path: polygon(0 45%, 10% 40%, 20% 45%, 30% 65%, 40% 50%, 50% 90%, 60% 50%, 70% 35%, 80% 40%, 90% 70%, 100% 30%,
             100% 40%, 90% 80%, 80% 50%, 70% 45%, 60% 60%, 50% 100%, 40% 60%, 30% 75%, 20% 55%, 10% 50%, 0% 55%);
@@ -48,6 +49,30 @@
   100% {
     clip-path: polygon(0 45%, 10% 45%, 20% 45%, 30% 45%, 40% 45%, 50% 45%, 60% 45%, 70% 45%, 80% 45%, 90% 45%, 100% 45%,
                        100% 55%, 90% 55%, 80% 55%, 70% 55%, 60% 55%, 50% 55%, 40% 55%, 30% 55%, 20% 55%, 10% 55%, 0% 55%);
+  }
+}
+
+@keyframes straightToFancyLineBeforeOut {
+  100% {
+    clip-path: polygon(0 30%, 10% 70%, 20% 40%, 30% 35%, 40% 50%, 50% 90%, 60% 40%, 70% 65%, 80% 45%, 90% 40%, 100% 45%,
+            100% 55%, 90% 50%, 80% 55%, 70% 75%, 60% 50%, 50% 100%, 40% 60%, 30% 45%, 20% 50%, 10% 80%, 0% 40%);
+  }
+
+  0% {
+    clip-path: polygon(0 45%, 10% 45%, 20% 45%, 30% 45%, 40% 45%, 50% 45%, 60% 45%, 70% 45%, 80% 45%, 90% 45%, 100% 45%,
+            100% 55%, 90% 55%, 80% 55%, 70% 55%, 60% 55%, 50% 55%, 40% 55%, 30% 55%, 20% 55%, 10% 55%, 0% 55%);
+  }
+}
+
+@keyframes straightToFancyLineAfterOut {
+  100% {
+    clip-path: polygon(0 45%, 10% 40%, 20% 45%, 30% 65%, 40% 50%, 50% 90%, 60% 50%, 70% 35%, 80% 40%, 90% 70%, 100% 30%,
+            100% 40%, 90% 80%, 80% 50%, 70% 45%, 60% 60%, 50% 100%, 40% 60%, 30% 75%, 20% 55%, 10% 50%, 0% 55%);
+  }
+
+  0% {
+    clip-path: polygon(0 45%, 10% 45%, 20% 45%, 30% 45%, 40% 45%, 50% 45%, 60% 45%, 70% 45%, 80% 45%, 90% 45%, 100% 45%,
+            100% 55%, 90% 55%, 80% 55%, 70% 55%, 60% 55%, 50% 55%, 40% 55%, 30% 55%, 20% 55%, 10% 55%, 0% 55%);
   }
 }
 
@@ -73,29 +98,50 @@
                        100% 40%, 90% 80%, 80% 50%, 70% 45%, 60% 60%, 50% 100%, 40% 60%, 30% 75%, 20% 55%, 10% 50%, 0% 55%);
   }
 
-  &__before-line--animate {
-    animation: straightToFancyLineBefore;
+  &__before-line--animate-forward {
+    animation: straightToFancyLineBeforeIn;
     animation-duration: .4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
 
-  &__after-line--animate {
-    animation: straightToFancyLineAfter;
+  &__before-line--animate-reverse {
+    animation: straightToFancyLineBeforeOut;
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &__after-line--animate-forward {
+    animation: straightToFancyLineAfterIn;
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &__after-line--animate-reverse {
+    animation: straightToFancyLineAfterOut;
     animation-duration: .4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
 
   &__button {
-    display: inline-block;
+
+    display: flex;
+    align-items: center;
+
+    & > i {
+      margin-right: 1rem;
+    }
+
     background-color: $background-color;
     color: $white;
-    font-size: 1.5rem;
     border-radius: 5px;
     width: max-content;
     margin: 2rem;
     border: none;
-    padding: 1rem 3rem;
+    padding: .5rem 1.5rem;
+    white-space: nowrap;
   }
 }

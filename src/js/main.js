@@ -7,6 +7,9 @@ window.onload = function () {
 
     const cvHandler = new CVHandler();
     cvHandler.register();
+
+    const header = document.getElementsByClassName('header')[0];
+    console.log("Header", window.getComputedStyle(header).clipPath);
 };
 
 

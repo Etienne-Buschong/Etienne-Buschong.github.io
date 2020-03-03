@@ -6,6 +6,7 @@
   width: 10rem;
   height: 10rem;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  z-index: 10;
 
   &--1 {
     right: 15%;
