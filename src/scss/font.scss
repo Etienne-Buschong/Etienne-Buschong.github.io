@@ -35,3 +35,17 @@ body {
 .text-color--dark {
   color: black;
 }
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--center-content-vertically {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  & > * {
+    margin: 0 .5rem;
+  }
+}

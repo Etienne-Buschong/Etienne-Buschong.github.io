@@ -2,8 +2,9 @@
 @import url('https://css.gg/attachment.css');
 
 .about {
-
-  padding-bottom: 5rem;
+  // clip-path: polygon(0 0, 0 67%, 10% 96%, 20% 90%,30% 100%, 40% 100%, 50% 82%, 60% 95%, 70% 85%, 80% 92%, 90% 75%, 100% 90%, 100% 0);
+  background-color: $white;
+  padding: 2rem 0 5rem 0;
 
   &__content {
     padding: 0 2rem;
