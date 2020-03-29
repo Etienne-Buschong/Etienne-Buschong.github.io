@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
-    <link href="https://css.gg/c?=|arrow-right|arrow-up-o|attachment|bolt|check-r|file-document|info|link|time" rel="stylesheet">
+    <link href="https://css.gg/c?=|arrow-right|arrow-up-o|attachment|bolt|check-r|file-document|info|link|time|instagram|mail|git-fork" rel="stylesheet">
     <script type="text/javascript" src="dist/main.js" charset="utf-8"></script>
 </head>
 
@@ -27,14 +27,25 @@
         <div class="octagon octagon--2">&nbsp;</div>
         <div class="octagon octagon--3">&nbsp;</div>
         <div class="title">
-            <h1 class="text--large text-color--light">Etienne Buschong</h1>
-            <h2 class="text--medium text--slim text-color--light">Master of science student in computer science</h2>
+            <h1 class="text--large">Etienne Buschong</h1>
+            <h2 class="text--medium text--slim">Master of science student in computer science</h2>
+            <div class="social-container">
+                <div class="icon-container">
+                    <i class="gg-git-fork"></i>
+                </div>
+               <div class="icon-container">
+                   <i class="gg-mail"></i>
+               </div>
+                <div class="icon-container">
+                    <i class="gg-instagram"></i>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <section id="about" class="about">
     <div class="letterbox centering">
-        <h2 class="text--large text-color--dark space-top--medium">About</h2>
+        <h2 class="text--large space-top--medium">About</h2>
         <div class="about__content space-top--large">
             <!-- TODO Find more nice looking image (or take new one ;)) -->
             <img class="about__picture" src="dist/images/profile.jpg" alt="Picture of me">
@@ -66,8 +77,8 @@
 <section class="education">
     <div class="letterbox centering">
         <div class="degrees_content">
-            <h2 class="text--large text-color--light space-top--medium">Education</h2>
-            <h3 style="text-align: start" class="text-color--light text--medium space-top--medium text--underline">Degrees</h3>
+            <h2 class="text--large space-top--medium">Education</h2>
+            <h3 style="text-align: start" class="text--medium space-top--medium text--underline">Degrees</h3>
             <div class="timeline">
                 <div class="timeline-entry timeline-entry--1">
                     <div class="timeline-entry__content">
@@ -114,94 +125,113 @@
 </section>
 <section class="work-experience">
     <div class="letterbox centering">
-        <h2 class="text--large text-color--dark space-top--medium">Work Experience</h2>
+        <h2 class="text--large space-top--medium">Work Experience</h2>
         <div class="work-experience-content">
             <div class="card">
-                <div class="card-header card-header--dark">
-                    <img class="work-experience-img-augenpulver" src="dist/images/augenpulver_logo.png" alt="Logo of the company Augenpulver">
-                    <span class="card-header-bottom-left-span">10/2017 - 02/2018</span>
-                    <a href="https://augenpulver.eu" target="_blank" rel="noopene noreferrer" class="card-header-bottom-right-span">
-                        <i class="gg-link"></i>
-                        <p>Augenpulver</p>
-                    </a>
-                </div>
-                <div class="card-content">
-                    <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did</h3>
-                    <ul class="work-experience-list">
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>10 week internship in scope of a university</p>
-                        </li>
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>Implemented chat functionality for a website using Vue.js, Node.js and Websockets</p>
-                        </li>
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>Used the Cinema4D Python API to program requested plugins for the designers.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <h3 class="text--center-content-vertically"><i class="gg-info"></i>Technologies</h3>
-                    <div class="pill-container">
-                        <span class="pill pill--orange">HTML</span>
-                        <span class="pill pill--orange">CSS</span>
-                        <span class="pill pill--orange">JS</span>
-                        <span class="pill pill--orange">Gulp</span>
-                        <span class="pill pill--orange">Vue.js</span>
-                        <span class="pill pill--orange">Node.js</span>
-                        <span class="pill pill--orange">Socket.io</span>
-                        <span class="pill pill--blue">Python</span>
-                        <span class="pill pill--blue">C++</span>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-header card-header--dark">
+                            <img class="work-experience-img-augenpulver" src="dist/images/augenpulver_logo.png" alt="Logo of the company Augenpulver">
+                        </div>
+                        <div class="card-content">
+                            <div class="work-experience-content-header">
+                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did</h3>
+                                <p>10/2017-02/2018</p>
+                            </div>
+                            <ul class="work-experience-list">
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>10 week internship in scope of a university</p>
+                                </li>
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>Implemented chat functionality for a website using Vue.js, Node.js and Websockets</p>
+                                </li>
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>Used the Cinema4D Python API to program requested plugins for the designers.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="work-experience-back-content">
+                            <div class="work-experience-back-technologies">
+                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>Technologies</h3>
+                                <div class="pill-container space-top--medium">
+                                    <span class="pill pill--orange">HTML</span>
+                                    <span class="pill pill--orange">CSS</span>
+                                    <span class="pill pill--orange">JS</span>
+                                    <span class="pill pill--orange">Gulp</span>
+                                    <span class="pill pill--orange">Vue.js</span>
+                                    <span class="pill pill--orange">Node.js</span>
+                                    <span class="pill pill--orange">Socket.io</span>
+                                    <span class="pill pill--blue">Python</span>
+                                    <span class="pill pill--blue">C++</span>
+                                </div>
+                            </div>
+                            <div class="work-experience-back-visit-website">
+                                <a class="text-color--light" href="https://augenpulver.eu">Visit Augenpulver's website</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-header card-header--dark">
-                    <img class="work-experience-img-aeb" src="dist/images/aeb_logo.svg" alt="Logo of the company AEB">
-                    <span class="card-header-bottom-left-span">09/2018 - Present</span>
-                    <a href="https://www.aeb.com/" target="_blank" rel="noopene noreferrer" class="card-header-bottom-right-span">
-                        <i class="gg-link"></i>
-                        <p>AEB</p>
-                    </a>
-                </div>
-                <div class="card-content">
-                    <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did / What i do</h3>
-                    <ul class="work-experience-list">
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>Started with a 4 week internship, leading to an employment as a working student</p>
-                        </li>
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>
-                                Contributing to a microservice-based framework
-                                <a href="https://www.aeb.com/de-de/flexible-loesungen/" target="_blank" rel="noreferrer noopener">
-                                    (nEXT)
-                                </a>
-                                in form of adding features or fixing bugs
-                            </p>
-                        </li>
-                        <li class="work-experience-list-item">
-                            <span><i class="gg-arrow-right"></i></span>
-                            <p>Programmed/maintaining services in own responsibility to enhance the nEXT toolchain</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <h3 class="text--center-content-vertically"><i class="gg-info"></i>Technologies</h3>
-                    <div class="pill-container">
-                        <span class="pill pill--orange">HTML</span>
-                        <span class="pill pill--orange">CSS</span>
-                        <span class="pill pill--orange">JS</span>
-                        <span class="pill pill--orange">Gulp</span>
-                        <span class="pill pill--orange">Angular</span>
-                        <span class="pill pill--orange">GraphQL</span>
-                        <span class="pill pill--orange">Node.js</span>
-                        <span class="pill pill--orange">Nest.js</span>
-                        <span class="pill pill--orange">Typescript</span>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-header card-header--dark">
+                            <img class="work-experience-img-aeb" src="dist/images/aeb_logo.svg" alt="Logo of the company AEB">
+                        </div>
+                        <div class="card-content">
+                            <div class="work-experience-content-header">
+                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did / What i do</h3>
+                                <p>10/2017-02/2018</p>
+                            </div>
+                            <ul class="work-experience-list">
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>Started with a 4 week internship, leading to an employment as a working student</p>
+                                </li>
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>
+                                        Contributing to a microservice-based framework
+                                        <a href="https://www.aeb.com/de-de/flexible-loesungen/" target="_blank" rel="noreferrer noopener">
+                                            (nEXT)
+                                        </a>
+                                        in form of adding features or fixing bugs
+                                    </p>
+                                </li>
+                                <li class="work-experience-list-item">
+                                    <span><i class="gg-arrow-right"></i></span>
+                                    <p>Programmed/maintaining services in own responsibility to enhance the nEXT toolchain</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="card-back">
+                        <div class="work-experience-back-content">
+                            <div class="work-experience-back-technologies">
+                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>Technologies</h3>
+                                <div class="pill-container space-top--medium">
+                                    <span class="pill pill--orange">HTML</span>
+                                    <span class="pill pill--orange">CSS</span>
+                                    <span class="pill pill--orange">JS</span>
+                                    <span class="pill pill--orange">Gulp</span>
+                                    <span class="pill pill--orange">Angular</span>
+                                    <span class="pill pill--orange">GraphQL</span>
+                                    <span class="pill pill--orange">Node.js</span>
+                                    <span class="pill pill--orange">Nest.js</span>
+                                    <span class="pill pill--orange">Typescript</span>
+                                </div>
+                            </div>
+                            <div class="work-experience-back-visit-website">
+                                <a class="text-color--light" href="https://augenpulver.eu">Visit AEB's website</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
