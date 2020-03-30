@@ -8,39 +8,49 @@ body {
   font-weight: 400;
 }
 
-.text--huge {
+.text--size-5 {
   font-size: 4rem;
 }
 
-.text--large {
+.text--size-4 {
   font-size: 3rem;
 }
 
-.text--medium {
+.text--size-3 {
   font-size: 1.5rem;
 }
 
-.text--small {
+.text--size-2 {
+  font-size: 1.3rem;
+}
+
+.text--size-1 {
   font-size: 1rem;
 }
 
-.text--tiny {
-  font-size: .9rem;
-}
-
 .text-color--light {
-  color: $white;
+  color: $white-text-color;
 }
 
 .text-color--dark {
-  color: black;
+  color: $background-color-dark;
 }
 
 .text--underline {
   text-decoration: underline;
 }
 
-.text--center-content-vertically {
+.text--center-horizontally {
+  text-align: center;
+}
+
+.text--center-vertically {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text--center-with-icon {
   display: flex;
   align-items: center;
   justify-content: start;

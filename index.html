@@ -9,35 +9,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
-    <link href="https://css.gg/c?=|arrow-right|arrow-up-o|attachment|bolt|check-r|file-document|info|link|time|instagram|mail|git-fork" rel="stylesheet">
+    <link href="https://css.gg/c?=|arrow-right|arrow-up-o|attachment|bolt|check-r|file-document|info|link|time|instagram|mail|git-fork"
+          rel="stylesheet">
     <script type="text/javascript" src="dist/main.js" charset="utf-8"></script>
 </head>
 
 <body id="body">
 <section class="header">
+    <div class="nav-background">&nbsp;</div>
     <div class="letterbox">
-        <nav class="navbar text--small">
-            <a class="navbar__link" href="#about">About</a>
-            <a class="navbar__link" href="#">Education</a>
-            <a class="navbar__link" href="#">Work Experience</a>
-            <a class="navbar__link" href="#">Projects</a>
-            <a class="navbar__link" href="#">Contact</a>
+        <nav class="navbar text--size-1">
+            <div class="navbar__link-container">
+                <a class="navbar__link" href="#about">About</a>
+            </div>
+            <div class="navbar__link-container">
+                <a class="navbar__link" href="#">Education</a>
+            </div>
+            <div class="navbar__link-container">
+                <a class="navbar__link" href="#">Work Experience</a>
+            </div>
+            <div class="navbar__link-container">
+                <a class="navbar__link" href="#">Projects</a>
+            </div>
+            <div class="navbar__link-container">
+                <a class="navbar__link" href="#">Contact</a>
+            </div>
+
         </nav>
         <div class="octagon octagon--1">&nbsp;</div>
         <div class="octagon octagon--2">&nbsp;</div>
         <div class="octagon octagon--3">&nbsp;</div>
         <div class="title">
-            <h1 class="text--large">Etienne Buschong</h1>
-            <h2 class="text--medium text--slim">Master of science student in computer science</h2>
+            <h1 class="text--size-5">Etienne Buschong</h1>
+            <h2 class="text--size-3 text--slim">Master of science student in computer science</h2>
             <div class="social-container">
                 <div class="icon-container">
-                    <i class="gg-git-fork"></i>
+                    <a href="https://github.com/Etienne-Buschong" target="_blank" rel="noreferrer noopener">
+                        <i class="gg-git-fork"></i>
+                    </a>
                 </div>
-               <div class="icon-container">
-                   <i class="gg-mail"></i>
-               </div>
                 <div class="icon-container">
-                    <i class="gg-instagram"></i>
+                    <a href="mailto:etienne@buschong.de" target="_blank" rel="noreferrer noopener">
+                        <i class="gg-mail"></i>
+                    </a>
+                </div>
+                <div class="icon-container">
+                    <a href="https://www.instagram.com/eti4996/" target="_blank" rel="noreferrer noopener">
+                        <i class="gg-instagram"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -45,9 +65,8 @@
 </section>
 <section id="about" class="about">
     <div class="letterbox centering">
-        <h2 class="text--large space-top--medium">About</h2>
-        <div class="about__content space-top--large">
-            <!-- TODO Find more nice looking image (or take new one ;)) -->
+        <div class="about__content space-top--medium">
+            <h2 class="text--size-4">About</h2>
             <img class="about__picture" src="dist/images/profile.jpg" alt="Picture of me">
             <div class="about__text">
                 <p>
@@ -63,63 +82,213 @@
                     play competitive shooters or occasionally a MMO.
                 </p>
             </div>
-        </div>
-        <div class="cv-container">
-            <div class="cv-container__before-line">&nbsp;</div>
-            <button class="cv-container__button text--small">
-                <i class="gg-attachment"></i>
-                Download CV
-            </button>
-            <div class="cv-container__after-line">&nbsp;</div>
+            <div class="cv-container">
+                <button class="cv-container__button text--small">
+                    <i class="text-color--light gg-attachment"></i>
+                    Download CV
+                </button>
+            </div>
         </div>
     </div>
 </section>
 <section class="education">
     <div class="letterbox centering">
+        <h2 class="text--size-4 space-top--medium">Education</h2>
         <div class="degrees_content">
-            <h2 class="text--large space-top--medium">Education</h2>
-            <h3 style="text-align: start" class="text--medium space-top--medium text--underline">Degrees</h3>
+            <h3 class="text--size-3">Degrees</h3>
             <div class="timeline">
                 <div class="timeline-entry timeline-entry--1">
                     <div class="timeline-entry__content">
-                        <p class="timeline-entry__degree">German A-Levels</p>
-                        <p class="timeline-entry__institution text--tiny">Gymnasium am Mosbacher Berg</p>
+                        <p class="timeline-entry__degree text--size-1">German A-Levels</p>
+                        <p class="timeline-entry__institution text--size-1">Gymnasium am Mosbacher Berg</p>
+                        <p class="timeline-entry__time text--size-1">2006-2014</p>
                         <div class="timeline-entry__done-indicator">
                             <i class="gg-check-r"></i>
-                        </div>
-                        <div class="timeline-entry__time-indicator">
-                            2006-2014
                         </div>
                     </div>
                 </div>
                 <div class="timeline-entry timeline-entry--2">
                     <div class="timeline-entry__content">
-                        <p class="timeline-entry__degree">B.Sc. Computer Science</p>
-                        <p class="timeline-entry__institution text--tiny">Johannes-Gutenberg Universität</p>
+                        <p class="timeline-entry__degree text--size-1">B.Sc. Computer Science</p>
+                        <p class="timeline-entry__institution text--size-1">Johannes-Gutenberg Universität</p>
+                        <p class="timeline-entry__time text--size-1">2014-2018</p>
                         <div class="timeline-entry__done-indicator">
                             <i class="gg-check-r"></i>
-                        </div>
-                        <div class="timeline-entry__time-indicator">
-                            2014-2018
                         </div>
                     </div>
                 </div>
                 <div class="timeline-entry timeline-entry--3">
                     <div class="timeline-entry__content">
-                        <p class="timeline-entry__degree">M.Sc. Economical Computer Science</p>
-                        <p class="timeline-entry__institution text--tiny">Johannes-Gutenberg Universität</p>
+                        <p class="timeline-entry__degree text--size-1">M.Sc. Economical Computer Science</p>
+                        <p class="timeline-entry__institution text--size-1">Johannes-Gutenberg Universität</p>
+                        <p class="timeline-entry__time text--size-1">2018-Now</p>
                         <div class="timeline-entry__done-indicator">
                             <i class="gg-time"></i>
-                        </div>
-                        <div class="timeline-entry__time-indicator">
-                            2018-Now
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="notable_courses">
-            <h3 style="text-align: start" class="text-color--light text--medium space-top--medium text--underline">Notable Courses at University</h3>
+        <div class="lang_skills_content">
+            <h3 class="text--size-3">Skills and Languages</h3>
+            <div class="lang_skills_cards">
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Web Development</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            I did backend- as well as frontend-development work. I gained much expertise during my internships,
+                            my time as a working student and private projects.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Node.js</p>
+                            <p>Nest.js</p>
+                            <p>JS/TS</p>
+                            <p>Websockets</p>
+                            <p>GraphQL</p>
+                            <p>REST</p>
+                            <p>Angular</p>
+                            <p>Vue.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Big Data</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            I learned about strategies to cope with big amounts of data using <b>Hadoop</b> or <b>Spark</b>
+                            during a university course and an complementary 2-week practical course.
+                            I also completed my bachelor thesis using Spark in the
+                            context of bio-informatics.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Hadoop</p>
+                            <p>Spark</p>
+                            <p>Java</p>
+                            <p>Scala</p>
+                            <p>Maven</p>
+                            <p>Sbt</p>
+                            <p>Cassandra</p>
+                            <p>HDFS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Visual Computing / Deep Learning</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            I first learned about classic computer vision methods with handcrafted filters, leading to more modern approaches using
+                            various neural network architectures.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Python</p>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Machine Learning / Data Mining</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            I learned about classic machine learning techniques while also getting a basic introduction
+                            to neural networks and deep learning.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Java</p>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Android Development</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            Development of multiple android applications using the Android-SDK and Java both
+                            for university courses and hobby projects.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Android SDK</p>
+                            <p>Java</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            While being no expert, I can comfortably design and use both SQL- and
+                            NoSQL-databases. In case of a relational database I can apply database normalisation to reduce
+                            redundancies and anomalies.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>MySQL</p>
+                            <p>Postgres</p>
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>GPU programming</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            In multiple university courses I learned about different aspects of GPU programming.
+                            In computer graphics I used OpenGL to model, manipulate and display three-dimensional
+                            data. In the context of high-performance computing I used CUDA to implement algorithms on a
+                            GPU efficiently.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>OpenGL</p>
+                            <p>QT</p>
+                            <p>CUDA</p>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang_skills_card">
+                    <div class="lang_skills_card-header">
+                        <h4>Operations Management (OM) and Research (OR)</h4>
+                    </div>
+                    <div class="lang_skills_card-content">
+                        <p>
+                            I learned about process management to create and deliver products and service efficiently (OM).
+                            Afterwards i learned to model and optimize many value-creation processes mainly using linear-
+                            programming methods.
+                        </p>
+                    </div>
+                    <div class="lang_skills_card-footer">
+                        <div class="lang_skills_tech_container">
+                            <p>Excel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -131,7 +300,8 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="card-header card-header--dark">
-                            <img class="work-experience-img-augenpulver" src="dist/images/augenpulver_logo.png" alt="Logo of the company Augenpulver">
+                            <img class="work-experience-img-augenpulver" src="dist/images/augenpulver_logo.png"
+                                 alt="Logo of the company Augenpulver">
                         </div>
                         <div class="card-content">
                             <div class="work-experience-content-header">
@@ -145,7 +315,8 @@
                                 </li>
                                 <li class="work-experience-list-item">
                                     <span><i class="gg-arrow-right"></i></span>
-                                    <p>Implemented chat functionality for a website using Vue.js, Node.js and Websockets</p>
+                                    <p>Implemented chat functionality for a website using Vue.js, Node.js and
+                                        Websockets</p>
                                 </li>
                                 <li class="work-experience-list-item">
                                     <span><i class="gg-arrow-right"></i></span>
@@ -171,7 +342,8 @@
                                 </div>
                             </div>
                             <div class="work-experience-back-visit-website">
-                                <a class="text-color--light" href="https://augenpulver.eu">Visit Augenpulver's website</a>
+                                <a class="text-color--light" href="https://augenpulver.eu">Visit Augenpulver's
+                                    website</a>
                             </div>
                         </div>
                     </div>
@@ -181,23 +353,27 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="card-header card-header--dark">
-                            <img class="work-experience-img-aeb" src="dist/images/aeb_logo.svg" alt="Logo of the company AEB">
+                            <img class="work-experience-img-aeb" src="dist/images/aeb_logo.svg"
+                                 alt="Logo of the company AEB">
                         </div>
                         <div class="card-content">
                             <div class="work-experience-content-header">
-                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did / What i do</h3>
-                                <p>10/2017-02/2018</p>
+                                <h3 class="text--center-content-vertically"><i class="gg-info"></i>What i did / What i
+                                    do</h3>
+                                <p>09/2018-Present</p>
                             </div>
                             <ul class="work-experience-list">
                                 <li class="work-experience-list-item">
                                     <span><i class="gg-arrow-right"></i></span>
-                                    <p>Started with a 4 week internship, leading to an employment as a working student</p>
+                                    <p>Started with a 4 week internship, leading to an employment as a working
+                                        student</p>
                                 </li>
                                 <li class="work-experience-list-item">
                                     <span><i class="gg-arrow-right"></i></span>
                                     <p>
                                         Contributing to a microservice-based framework
-                                        <a href="https://www.aeb.com/de-de/flexible-loesungen/" target="_blank" rel="noreferrer noopener">
+                                        <a href="https://www.aeb.com/de-de/flexible-loesungen/" target="_blank"
+                                           rel="noreferrer noopener">
                                             (nEXT)
                                         </a>
                                         in form of adding features or fixing bugs
@@ -205,7 +381,8 @@
                                 </li>
                                 <li class="work-experience-list-item">
                                     <span><i class="gg-arrow-right"></i></span>
-                                    <p>Programmed/maintaining services in own responsibility to enhance the nEXT toolchain</p>
+                                    <p>Programmed/maintaining services in own responsibility to enhance the nEXT
+                                        toolchain</p>
                                 </li>
                             </ul>
                         </div>

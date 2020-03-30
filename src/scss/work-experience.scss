@@ -2,8 +2,9 @@
 
 
 .work-experience {
+  background-color: $blue-color;
   position: relative;
-  margin-bottom: 5rem;
+  padding-bottom: 8rem;
 
   &-img-aeb {
     width: 140px;
@@ -68,7 +69,7 @@
 
     &-visit-website {
       padding: 1rem 0;
-      background-color: $background-color;
+      background-color: $background-color-dark;
       width: 80%;
       border-radius: 10px;
       margin-bottom: 2rem;

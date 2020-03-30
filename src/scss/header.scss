@@ -4,6 +4,7 @@
   position: relative;
   height: 85vh;
   width: 100%;
+  background-color: whitesmoke;
 
 }
 
@@ -18,7 +19,7 @@
 .social-container {
   height: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 
   & > .icon-container {
