@@ -1,5 +1,6 @@
 const OctagonHandler = require('./OctagonHandler');
 const CVHandler = require('./CVHandler');
+const CarouselHandler = require('./CarouselHandler');
 
 window.onload = function () {
     const octagonHandler = new OctagonHandler();
@@ -8,8 +9,8 @@ window.onload = function () {
    // const cvHandler = new CVHandler();
     // cvHandler.register();
 
-    const header = document.getElementsByClassName('header')[0];
-    console.log("Header", window.getComputedStyle(header).clipPath);
+    const carouselHandler = new CarouselHandler();
+
 };
 
 

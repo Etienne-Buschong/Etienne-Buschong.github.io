@@ -30,7 +30,6 @@ $timeline_item_distance: 2.2rem;
   top: calc(-100px - #{$timeline_item_distance});
   width: 300px;
   height: 100px;
-  border: 5px solid $red-color;
   border-radius: 5px;
   transition: height .4s ease-out;
 
@@ -57,8 +56,6 @@ $timeline_item_distance: 2.2rem;
   &::after {
     bottom: calc(3px - 2.4rem);
     background-color: $blue-color;
-    border-left: 5px solid $red-color;
-    border-right: 5px solid $red-color;
     width: 10px;
     height: $timeline_item_distance;
   }
@@ -70,7 +67,7 @@ $timeline_item_distance: 2.2rem;
     width: 10px;
     height: 10px;
     padding: .2rem;
-    bottom: calc(1.5 * -2.4rem);
+    bottom: calc(1.5 * -2.2rem);
     z-index: 10;
   }
 

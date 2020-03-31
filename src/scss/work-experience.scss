@@ -4,6 +4,7 @@
 .work-experience {
   background-color: $blue-color;
   position: relative;
+  padding-top: 3rem;
   padding-bottom: 8rem;
 
   &-img-aeb {
@@ -14,20 +15,52 @@
     width: 250px;
   }
 
+  &-img-augenpulver, &-img-aeb {
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: -2.5rem;
+  }
+
+  &-header {
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: $blue-color;
+
+    &-time {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $background-color-light;
+      color: $blue-color;
+      padding: .5rem 1.5rem;
+      border-radius: 10px;
+    }
+
+  }
+
   &-content {
     margin-top: 3rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-    &-header {
-      display: flex;
-      justify-content: space-between;
-      color: gray;
-      font-size: 90%;
+    & * {
+      color: $blue-color;
     }
+  }
 
-    & > *:not(:last-child) {
-      margin-right: 7em;
+  &-visit-website {
+    margin: 2rem auto 0 auto;
+    background-color: $blue-color;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    & > a:link, & > a:visited {
+      text-decoration: none;
+      color: $white-text-color;
     }
   }
 
@@ -44,59 +77,32 @@
       align-items: center;
       width: 100%;
 
+      & > * {
+        color: $blue-color;
+      }
+
       & i {
         margin-right: .75rem;
       }
     }
   }
-
-  &-back {
-
-    &-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-    }
-
-    &-technologies {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem;
-    }
-
-    &-visit-website {
-      padding: 1rem 0;
-      background-color: $background-color-dark;
-      width: 80%;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-    }
-  }
 }
 
 .pill-container {
-  margin-top: 1rem;
+  width: 80%;
+  margin: 1rem auto;
   display: grid;
   grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
-  grid-row-gap: 2rem;
-  grid-column-gap: 2rem;
+  grid-row-gap: .25rem;
   grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+  justify-items: center;
 }
 
 .pill {
-  background-color: gray;
   width: 5rem;
   padding: .2rem 0;
   border-radius: 10px;
+  color: $white-text-color;
+  background-color: $blue-color;
 
-  &--orange {
-    background-color: coral;
-  }
-
-  &--blue {
-    background-color: dodgerblue;
-  }
 }

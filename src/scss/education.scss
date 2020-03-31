@@ -43,8 +43,10 @@
   margin: 1rem;
   width: 30rem;
   background-color: $blue-color;
-  border: 5px solid $red-color;
+  box-shadow: 8px 8px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
   &-header, &-content, &-footer {
     padding: .5rem;
@@ -58,6 +60,10 @@
     padding-left: 3rem;
     padding-right: 3rem;
     line-height: 1.4;
+  }
+
+  &-footer {
+    margin-top: auto;
   }
 
   & * {
