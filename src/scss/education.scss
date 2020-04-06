@@ -47,13 +47,18 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  border: 5px solid transparent;
+  transition: border .5s ease-out;
+
+  &:hover {
+    border: 5px solid $red-color;
+  }
 
   &-header, &-content, &-footer {
     padding: .5rem;
   }
 
   &-header {
-    margin-top: 1rem;
   }
 
   &-content {
@@ -64,6 +69,7 @@
 
   &-footer {
     margin-top: auto;
+    display: none;
   }
 
   & * {

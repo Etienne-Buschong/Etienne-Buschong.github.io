@@ -1,10 +1,38 @@
 @import "colors";
 
-// TODO implement when more buttons appear
-
 .button {
+  border-radius: 5px;
+  border: 3px solid $blue-color;
+  padding: .5rem 1.5rem;
+  color: $blue-color;
+  background-color: $background-color-light;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .4s ease-out;
+  outline: none;
 
-  .button--dark {
+  & > i {
+    margin: 0 .5rem;
+    color: $blue-color;
+    transition: color .4s ease-out;
+  }
+
+  &--cta:hover {
+    color: $red-color;
+    border-color: $red-color;
+
+    & > i {
+      color: $red-color
+    }
+  }
+
+  &--hover-movement:hover {
+
+  }
+
+  &--dark {
+    color: $white-text-color;
+    background-color: $blue-color;
 
   }
 }

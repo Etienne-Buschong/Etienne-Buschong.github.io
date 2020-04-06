@@ -25,7 +25,12 @@ class Carousel {
             }
             this.pageIndicatorDots.push(dot);
             this.pageIndicatorContainer.appendChild(dot);
+            dot.addEventListener('click', this.indicatorDotPressed.bind(this, i))
         }
+    }
+
+    indicatorDotPressed(index) {
+        this.setItemVisibility(index);
     }
 
     setItemVisibility(visibleIndex = 0) {
