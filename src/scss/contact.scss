@@ -15,58 +15,7 @@
   background-color: $white-text-color;
   box-shadow: 10px 10px 10px 10px rgba(black, .3);
   border-radius: 10px;
-  padding: 1rem;
-
-  &-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32rem;
-  }
-
-  &-left, &-right {
-    position: relative;
-    height: 100%;
-    margin-top: 3rem;
-  }
-
-  &-left, &-mid, &-right {
-    // padding: 1rem 5rem 2rem 5rem;
-  }
-
-  &-mid {
-    position: relative;
-    height: 100%;
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    & > * {
-      display: block;
-    }
-  }
-
-  &-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 35%;
-  }
-
-  &-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-  }
-
-}
-
-.contact-or-separator {
-  display: block;
-  font-weight: 700;
+  padding: 2rem 10rem;
 }
 
 .mail-send-container {
@@ -89,21 +38,6 @@
   }
 }
 
-.contact-container-right-inner {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  height: 100%;
-
-  & > a {
-    margin-top: 3rem;
-  }
-
-  & > h3 {
-    align-self: flex-start;
-  }
-}
-
 .fade-in-hint {
   text-align: center;
   color: gray;
@@ -111,4 +45,28 @@
   margin: .5rem;
   opacity: 0;
   visibility: hidden;
+}
+
+.other-contact-row {
+  display: flex;
+  justify-content: flex-end;
+
+  & > a, & > button {
+    text-decoration: none;
+    color: $blue-color;
+    cursor: pointer;
+
+    & > i {
+      color: $blue-color;
+    }
+
+    &:not(:last-child) {
+      margin: 0 2rem;
+    }
+  }
+}
+
+.copy-mail-button {
+  border: none;
+  background-color: transparent;
 }

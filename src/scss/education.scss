@@ -40,6 +40,7 @@
 }
 
 .lang_skills_card {
+  position: relative;
   margin: 1rem;
   width: 30rem;
   background-color: $blue-color;
@@ -69,11 +70,28 @@
 
   &-footer {
     margin-top: auto;
-    display: none;
+    padding: 0;
   }
 
   & * {
     color: $white-text-color;
+  }
+
+  &_info-icon {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    cursor: pointer;
+
+    & > button {
+      padding: .3rem;
+      color: $blue-color;
+      border: 2px solid $blue-color;
+      background-color: $white-text-color;
+      border-radius: 10px;
+      font-weight: 700;
+
+    }
   }
 }
 

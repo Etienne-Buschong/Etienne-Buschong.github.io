@@ -10,11 +10,13 @@
     <link rel="stylesheet" type="text/css" href="dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28dbba38ac.js" crossorigin="anonymous"></script>
+    <script src="dist/3rdparty/three.js"></script>
     <script type="text/javascript" src="dist/main.js" charset="utf-8"></script>
 </head>
 
 <body>
 <section class="header">
+    <div id="headerCanvasContainer" style="position: absolute; height: 100%; width: 100%;">&nbsp;</div>
     <div class="nav-background">&nbsp;</div>
     <div class="letterbox">
         <nav class="navbar text--size-1">
@@ -35,9 +37,6 @@
             </div>
 
         </nav>
-        <div class="octagon octagon--1">&nbsp;</div>
-        <div class="octagon octagon--2">&nbsp;</div>
-        <div class="octagon octagon--3">&nbsp;</div>
         <div class="title">
             <h1 class="text--size-5">Etienne Buschong</h1>
             <h2 class="text--size-3 text--slim">Master of science student in computer science</h2>
@@ -461,56 +460,51 @@
     <div class="letterbox centering">
         <div class="contact-container">
             <h2 class="text--size-4 text-color--dark">Contact</h2>
-            <div class="contact-container-inner">
-                <div class="contact-container-left">
-                    <div class="mail-send-container">
-                        <p class="text--size-3 text-color--dark">Thanks!</p>
-                        <p class="text--size-3 text-color--dark">Your E-Mail was send!</p>
-                        <i class="fas fa-shipping-fast text--size-4"></i>
-                    </div>
-                    <div class="form-container">
-                        <h3 class="text--size-3 text-color--dark">Write a message</h3>
-                        <form id="contact-form" class="contact-form" action="https://formspree.io/xzbazeee" method="POST">
-                            <div class="form-input-group">
-                                <label class="form-label" for="email">E-Mail Address</label>
-                                <input class="form-input" name="email" id="email" type="text" placeholder="Your e-mail address" required autocomplete="off">
-                            </div>
-                            <div class="form-input-group">
-                                <label class="form-label" for="subject">Subject</label>
-                                <input class="form-input" name="subject" id="subject" type="text" placeholder="Subject of your e-mail" required autocomplete="off">
-                            </div>
-                            <div class="form-input-group">
-                                <label class="form-label" for="body">Message</label>
-                                <textarea class="form-text-area" name="message" id="body" placeholder="Your message" rows="8" cols="80" required autocomplete="off"></textarea>
-                            </div>
-                            <!---->
-                            <input class="input-trap" type="text" id="emailAddress" name="emailAddress" autocomplete="off">
-                            <input class="input-trap" type="text" id="website" name="website" autocomplete="off">
-                            <!---->
-                            <button id="form-button" type="submit" class="button button--cta form-button text--size-2">
-                                Submit
-                                <i class="far fa-paper-plane"></i>
-                            </button>
-                            <p id="suspiciousHint" class="fade-in-hint">Form submission was blocked because of suspicious behaviour. Please try again</p>
-                        </form>
-                    </div>
-                </div>
-                <div class="contact-container-mid">
-                    <p class="text-color--dark text--size-3 contact-or-separator">OR</p>
-                </div>
-                <div class="contact-container-right">
-                    <div class="contact-container-right-inner">
-                        <h3 class="text--size-3 text-color--dark">Use your mail client</h3>
-                        <a href="mailto:etienne@buschong.de" target="_blank" rel="noreferrer noopener">
-                            <i class="fas fa-envelope text--size-7 text-color--dark"></i>
-                        </a>
-                        <button id="copyEmailButton" class="button text--size-2 form-button button--cta">
-                            Copy email <i class="fas fa-copy"></i>
-                        </button>
-                        <p id="clipboardHint" class="fade-in-hint">Copied to clipboard!</p>
-                    </div>
-                </div>
+            <div class="mail-send-container">
+                <p class="text--size-3 text-color--dark">Thanks!</p>
+                <p class="text--size-3 text-color--dark">Your E-Mail was send!</p>
+                <i class="fas fa-shipping-fast text--size-4"></i>
             </div>
+            <div class="form-container">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/xzbazeee" method="POST">
+                    <div class="form-input-group">
+                        <label class="form-label" for="email">E-Mail Address</label>
+                        <input class="form-input" name="email" id="email" type="text" placeholder="Your e-mail address"
+                               required autocomplete="off">
+                    </div>
+                    <div class="form-input-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input class="form-input" name="subject" id="subject" type="text"
+                               placeholder="Subject of your e-mail" required autocomplete="off">
+                    </div>
+                    <div class="form-input-group">
+                        <label class="form-label" for="body">Message</label>
+                        <textarea class="form-text-area" name="message" id="body" placeholder="Your message" rows="8"
+                                  cols="80" required autocomplete="off"></textarea>
+                    </div>
+                    <!---->
+                    <input class="input-trap" type="text" id="emailAddress" name="emailAddress" autocomplete="off">
+                    <input class="input-trap" type="text" id="website" name="website" autocomplete="off">
+                    <!---->
+                    <button id="form-button" type="submit" class="button button--cta form-button text--size-2">
+                        Submit
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                    <p id="suspiciousHint" class="fade-in-hint">Form submission was blocked because of suspicious
+                        behaviour. Please try again</p>
+                </form>
+            </div>
+            <div class="other-contact-row">
+                <a class="text--size-1" href="mailto:etienne@buschong.de" target="_blank" rel="noreferrer noopener">
+                    Use your mail client <i class="fas fa-envelope"></i>
+                </a>
+                <button class="copy-mail-button text--size-1" id="copyEmailButton">
+                    Copy email <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+        </div>
         </div>
     </div>
 </section>
