@@ -28,9 +28,9 @@ $timeline_item_distance: 2.2rem;
   z-index: 2;
   background-color: $blue-color;
   position: absolute;
-  top: calc(-100px - #{$timeline_item_distance});
+  top: calc(-139px - #{$timeline_item_distance});
   width: 300px;
-  height: 100px;
+  height: 140px;
   border-radius: 5px;
   transition: height .4s ease-out, border .4s ease-out;
   border: 5px solid transparent;
@@ -53,7 +53,7 @@ $timeline_item_distance: 2.2rem;
   }
 
   &::after, &::before {
-    z-index: 0;
+    z-index: -1;
     content: '';
     display: block;
     position: absolute;
@@ -65,7 +65,7 @@ $timeline_item_distance: 2.2rem;
     bottom: calc(3px - 2.4rem);
     background-color: $blue-color;
     width: 10px;
-    height: $timeline_item_distance;
+    height: 1.95rem;
   }
 
   &::before {
@@ -102,6 +102,22 @@ $timeline_item_distance: 2.2rem;
     color: $white-text-color;
   }
 
+  &__grade {
+    color: white;
+    padding: .35rem 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+
+    &-done {
+      background-color: $green-color;
+    }
+
+    &-undone {
+      background-color: $red-color;
+    }
+
+  }
+
   &__institution {
     color: rgba($white-text-color, .5);
   }
@@ -114,9 +130,16 @@ $timeline_item_distance: 2.2rem;
     margin-top: .5rem;
     color: $white-text-color;
 
-    & > i {
-      color: $white-text-color;
+    &-done > i {
+      color: $green-color;
     }
+
+    &-undone > i {
+      color: $red-color;
+
+
+    }
+
   }
 
 }

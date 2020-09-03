@@ -6,7 +6,7 @@ const CanvasHandler = require('./CanvasHandler');
 window.onload = function () {
     const formHandler = new FormHandler();
     const carouselHandler = new CarouselHandler();
-    const canvasHandler = new CanvasHandler();
+    const canvasHandler = new CanvasHandler(document.getElementById('headerCanvasContainer'));
 
 };
 

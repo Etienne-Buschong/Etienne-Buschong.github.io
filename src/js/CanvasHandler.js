@@ -1,24 +1,27 @@
 class CanvasHandler {
 
-    constructor() {
-        this.scene = new THREE.Scene();
-        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        this.renderer = new THREE.WebGLRenderer();
-        const renderElement = document.getElementById('headerCanvasContainer');
-        this.renderer.setSize(renderElement.innerWidth, renderElement.innerHeight);
-        renderElement.appendChild(this.renderer.domElement);
-
+    constructor(parentElement) {
+        this.scene = new THREE.Scene()
+        this.camera = new THREE.PerspectiveCamera( 75, parentElement.clientWidth / parentElement.clientHeight, 0.1, 1000 );
+        this.renderer = new THREE.WebGLRenderer({alpha: true});
+        console.log(parentElement.width, parentElement.innerWidth)
+        this.renderer.setSize( parentElement.clientWidth, parentElement.clientHeight );
+        parentElement.appendChild( this.renderer.domElement );
         var geometry = new THREE.BoxGeometry();
-        var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-        var cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-        camera.position.z = 5;
-        this.animate()
+        var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        this.cube = new THREE.Mesh( geometry, material );
+        this.scene.add( this.cube );
+
+        this.camera.position.z = 5;
+        this.animate();
+
     }
 
     animate() {
-        requestAnimationFrame(this.animate.bind(this));
-        this.renderer.render(this.scene, this.camera);
+        requestAnimationFrame( this.animate.bind(this) );
+        this.cube.rotation.x += 0.01;
+        this.cube.rotation.y += 0.01;
+        this.renderer.render( this.scene, this.camera );
     }
 
 }

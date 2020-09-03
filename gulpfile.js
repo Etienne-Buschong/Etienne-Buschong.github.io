@@ -8,6 +8,11 @@ const sourcemaps = require('gulp-sourcemaps');
 const tap = require('gulp-tap');
 const buffer = require('gulp-buffer');
 
+function images() {
+    return gulp.src('src/imgs/**/*')
+        .pipe(gulp.dest('dist/imgs'))
+}
+
 function scss() {
     return gulp.src('src/scss/main.scss')
         .pipe(sass())
@@ -28,4 +33,5 @@ function js() {
 exports.dev = () => {
     gulp.watch('src/scss/*.scss', scss);
     gulp.watch('src/js/*.js', js);
+    gulp.watch('src/imgs/**/*', images);
 };
