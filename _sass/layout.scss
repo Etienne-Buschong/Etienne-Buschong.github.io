@@ -1,0 +1,12 @@
+$max-row-width: 1140px;
+
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large-desktop: 1200px;
+
+
+.row {
+  max-width: $max-row-width;
+  margin: 0 auto;
+}

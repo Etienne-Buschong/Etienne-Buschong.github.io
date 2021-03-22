@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"index.scss",
+		"_sass/colors.scss"
+	],
+	"sourcesContent": [
+		"@import \"colors\";\n\nhtml {\n  background-color: $color-background-dark;\n}\n\n.hero-box {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}",
+		"$color-accent-2: rgba(22, 152, 115, 1);\n$color-background-light: rgba(251, 250, 248, 1);\n$color-accent-1: rgba(255, 107, 107, 1);\n$color-background-dark: rgba(29, 30, 44, 1);\n$color-blue: rgba(58, 110, 165, 1);"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,IAAI,CAAC,EACH,gBAAgB,ECAM,OAAmB,GDC1C;;AAED,AAAA,SAAS,CAAC,EACR,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,GAAG,EACR,IAAI,EAAE,GAAG,EACT,SAAS,EAAE,eAAe,EAC1B,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,GACpB"
+}

@@ -1,0 +1,35 @@
+@import "colors.scss";
+
+html * {
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.text-color-dark {
+  color: $color-background-dark;
+}
+
+.text-color-light {
+  color: $color-background-light;
+}
