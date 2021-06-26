@@ -111,25 +111,7 @@ p {
 
 @keyframes strobe {
     50% {
-        background-color: red;
+        background-color: white;
         color: black;
-    }
-}
-
-@keyframes slide-in-left {
-    80% {
-        left: 20px;
-    }
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes slide-in-right {
-    80% {
-        left: -20px;
-    }
-    100% {
-        left: 0;
     }
 }
