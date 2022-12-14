@@ -1,0 +1,23 @@
+{
+  "name": "etienne-buschong.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "scss:css:build": "node-sass --output-style compressed -o dist src/styles",
+    "scss:css:watch": "node-sass --output-style compressed -w -o dist src/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Etienne-Buschong/Etienne-Buschong.github.io.git"
+  },
+  "author": "Etienne Buschong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Etienne-Buschong/Etienne-Buschong.github.io/issues"
+  },
+  "homepage": "https://github.com/Etienne-Buschong/Etienne-Buschong.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
